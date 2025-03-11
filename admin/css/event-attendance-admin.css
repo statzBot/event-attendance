@@ -1,0 +1,130 @@
+/**
+ * Admin-Styles für das Event Attendance Plugin
+ *
+ * @package   Event_Attendance
+ * @author    Claude
+ * @license   GPL-2.0+
+ */
+
+/* Allgemeine Styles */
+.event-attendance-admin {
+    margin-top: 20px;
+}
+
+/* Formular-Container Styles */
+.event-form-container,
+.participant-form-container,
+.recurring-form-container,
+.settings-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 30px;
+}
+
+/* Listenstyles */
+.event-list-container,
+.participant-list-container {
+    margin-top: 30px;
+}
+
+/* Buttons */
+.event-attendance-admin .button {
+    margin-right: 5px;
+}
+
+/* Status-Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.status-attending {
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.status-declined {
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.status-unknown {
+    background: #fcf8e3;
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+}
+
+/* Modal-Styles */
+.event-attendance-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.event-attendance-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+}
+
+.event-attendance-modal-header {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-attendance-modal-header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.event-attendance-modal-body {
+    padding: 20px;
+}
+
+.event-attendance-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.event-attendance-modal-close:hover,
+.event-attendance-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {opacity: 0; transform: translateY(-60px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive-Anpassungen */
+@media (max-width: 782px) {
+    .event-attendance-modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}

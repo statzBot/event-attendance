@@ -1,0 +1,12 @@
+{
+  "name": "event-attendance-tests",
+  "version": "1.0.0",
+  "description": "Automated tests for the Event Attendance WordPress plugin",
+  "main": "tests/event-attendance-tests.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

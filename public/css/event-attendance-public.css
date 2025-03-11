@@ -1,0 +1,270 @@
+/**
+ * Öffentliche Styles für das Event Attendance Plugin
+ *
+ * @package   Event_Attendance
+ * @author    Claude
+ * @license   GPL-2.0+
+ */
+
+/* Container für Event-Attendance */
+.event-attendance-container {
+    margin: 20px 0;
+}
+
+/* Eventdetails */
+.event-detail {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #23282d;
+}
+
+.event-meta {
+    margin-bottom: 20px;
+}
+
+.event-meta p {
+    margin: 5px 0;
+}
+
+.event-description {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Event-Liste */
+.event-attendance-list {
+    margin-bottom: 20px;
+}
+
+.event-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.event-item-header {
+    flex: 1 1 60%;
+    min-width: 250px;
+    padding-right: 15px;
+}
+
+.event-title a {
+    text-decoration: none;
+    color: #2271b1;
+}
+
+.event-title a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+.event-meta .event-date {
+    margin-right: 15px;
+}
+
+.event-status {
+    flex: 1 0 30%;
+    min-width: 200px;
+    text-align: right;
+}
+
+/* Status-Badges */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.status-attending {
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.status-declined_sick,
+.status-declined_vacation,
+.status-declined_business {
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.status-none {
+    background: #fcf8e3;
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+}
+
+/* Zu-/Absage-Buttons */
+.attendance-buttons {
+    margin: 15px 0;
+}
+
+.attendance-button {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 8px 15px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.attendance-button:hover {
+    background: #e7e7e7;
+}
+
+.attendance-button.active {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.attendance-comment {
+    margin: 15px 0;
+}
+
+.attendance-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.attendance-feedback {
+    min-height: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.attendance-feedback .success {
+    color: green;
+}
+
+.attendance-feedback .error {
+    color: red;
+}
+
+.attendance-feedback .loading {
+    color: #666;
+}
+
+/* Teilnehmerliste */
+.attendees-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.attendees-table th, 
+.attendees-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.attendees-table th {
+    background: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Widget-spezifische Styles */
+.event-attendance-widget .event-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.event-attendance-widget h4 {
+    margin: 0 0 5px;
+}
+
+.event-attendance-widget .event-date,
+.event-attendance-widget .event-location {
+    margin: 0 0 8px;
+    font-size: 0.9em;
+}
+
+.event-attendance-widget .attendance-buttons {
+    margin: 10px 0;
+}
+
+.event-attendance-widget .attendance-button {
+    padding: 3px 8px;
+    font-size: 0.8em;
+}
+
+.event-attendance-widget .attendance-comment textarea {
+    height: 40px;
+    margin: 5px 0;
+    font-size: 0.85em;
+}
+
+.event-attendance-widget .attendance-feedback {
+    font-size: 0.85em;
+}
+
+.event-attendance-widget .attendees-list {
+    margin-top: 10px;
+    font-size: 0.85em;
+}
+
+.event-attendance-widget .attendees-list h5 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.event-attendance-widget .attendees-list ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.event-attendance-widget .no-attendees {
+    font-style: italic;
+    color: #777;
+}
+
+/* Responsive-Anpassungen */
+@media (max-width: 600px) {
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .event-item-header {
+        padding-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .event-status {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .attendance-button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
